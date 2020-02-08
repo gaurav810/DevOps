@@ -1,0 +1,15 @@
+
+Update the softwares.
+---------------------
+sudo apt-get update
+
+
+Install Docker
+--------------
+sudo apt install docker.io
+
+
+Start Docker Service
+--------------------
+sudo systemctl start docker
+
