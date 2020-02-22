@@ -56,7 +56,7 @@ Open 8080 port from your EC2 instance
 - Go to your instance Security Groups
 - Go to Inbound Tab and add 8080 port
 
- ![](C:\Users\Gaurav\Desktop\open.png)
+![open](C:\Users\Gaurav\Desktop\open.png)
 
 After that check on your browser
 --------------------------------
