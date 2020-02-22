@@ -3,36 +3,53 @@ Tomcat Installation on AWS EC2
 
 Create directory for Java and Tomcat installation.
 --------------------------------------------------
+```
 mkdir /usr/java
+```
 
 Download and Install Java 8
 ---------------------------
+```
 sudo yum install java-1.8.0-openjdk
+```
 
 Another Way for Download and Install Java 8
 -----------------------------------------
 - Download rpm file form oracle
+
+```
 yum install downloaded_file.rpm
+```
 
 Check Java Version
 ------------------
+```
 java -version
+```
 
 Download Tomcat (tar file)
 --------------------------
+```
 wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.51/bin/apache-tomcat-8.5.51.tar.gz
+```
 
 Extract downloaded tar file
 ---------------------------
+```
 tar xvfz file_name
+```
 
 Start the Tomcat Server
 -----------------------
+```
 location of bin folder > ./startup.sh
+```
 
 Check tomcat server started or not
 ----------------------------------
+```
 wget http://localhost:8080
+```
 
 - You can also check using browser
 
