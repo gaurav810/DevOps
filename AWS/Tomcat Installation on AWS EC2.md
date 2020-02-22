@@ -63,10 +63,14 @@ Access tomcat for remotly
 
 Comment below line
 
-<!--  <Valve className="org.apache.catalina.valves.RemoteAddrValve"
-         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" / > -->
+```
+<Valve className="org.apache.catalina.valves.RemoteAddrValve"
+         allow="127\.\d+\.\d+\.\d+|::1|0:0:0:0:0:0:0:1" / >
+```
 
-- Afre change restart your tomcat server.
+
+
+- Afterchange restart your tomcat server.
 
 Open 8080 port from your EC2 instance
 -------------------------------------
