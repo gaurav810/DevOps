@@ -1,0 +1,25 @@
+image: maven:3.3.9-jdk-8
+stages:
+  - build
+  - deploy
+  
+build:
+  stage: build
+  script:
+    - mvn clean install
+  artifacts:
+    paths:
+      - "target/*.war"
+      
+deploy:   
+   stage: deploy   
+   before_script: 
+     - mkdir -p ~/.ssh     
+     - echo -e "$SSH_PRIVATE_KEY" > ~/.ssh/id_rsa     
+     - chmod 600 ~/.ssh/id_rsa     
+     - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'   
+   script:     
+     - echo "Deploy project on server $SERVER_IP"
+     - scp target/spring-mvc-tomcat-ci-cd.war $SERVER_USER_NAME@$SERVER_IP:/usr/java/apache-tomcat-8.5.51/webapps
+
+
