@@ -1,0 +1,21 @@
+
+Start Zookeeper server
+======================
+
+kafka_location $ bin/zookeeper-server-start.sh config/zookeeper.properties
+
+Default Port : 2181
+
+Start Kafka server
+==================
+
+kafka_location $ bin/kafka-server-start.sh config/server.properties
+
+Default Port : 9092
+
+Start Kafka Connect server
+==========================
+
+kafka_location $ bin/connect-distributed.sh config/connect-distributed.properties
+
+Default Port : 8083
