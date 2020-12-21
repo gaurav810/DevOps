@@ -17,6 +17,7 @@
  
 #### Pause / Resume a Connector (no response if the call is successful)
 > curl -s -X PUT 127.0.0.1:8083/connectors/{connector_name}/pause
+
 > curl -s -X PUT 127.0.0.1:8083/connectors/{connector_name}/resume
 
 #### Connector Configuration
